@@ -1,2 +1,7 @@
 game\test.class
+game\events\customevents.class
+game\graph.class
+game\events\event.class
+game\events\storyevents.class
 game\init.class
+game\main.class
