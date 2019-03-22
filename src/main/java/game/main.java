@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 import static org.fusesource.jansi.Ansi.*;
 
+
+
 public class main {
 
     public static double SOCIETY = 0;
@@ -16,13 +18,18 @@ public class main {
 
     public static int STORY = 0;
     public static String KINGS[][] = new String[0][0];
-    public static String KING = "";
-    public static String ADVISER = "";
+    public static String KING = "Polcar";
+    public static String ADVISER = "Советник";
+
+    public static int MONTH = 1;
+    public static int YEAR = 1019;
 
 
     public static void init() throws InterruptedException {
 
+
         graph.getInterface();
+
 
     }
 
@@ -111,6 +118,44 @@ public class main {
     }
     public static int toInt(double arg) {
         return (int) arg;
+    }
+
+    public static String toString(int arg) {
+        return String.valueOf(arg);
+    }
+    public static String toString(double arg) {
+        return String.valueOf(arg);
+    }
+    public static String toString(char arg) {
+        return String.valueOf(arg);
+    }
+
+    public static char toChar(int arg) {
+        return toString(arg).charAt(0);
+    }
+    public static char toChar(int arg, int n) {
+        return toString(arg).charAt(n);
+    }
+    public static char toChar(double arg) {
+        return toString(arg).charAt(0);
+    }
+    public static char toChar(double arg, int n) {
+        return toString(arg).charAt(n);
+    }
+    public static char toChar(String arg) {
+        return arg.charAt(0);
+    }
+    public static char toChar(String arg, int n) {
+        return arg.charAt(n);
+    }
+    public static char[] toCharMas(int arg){
+        return toString(arg).toCharArray();
+    }
+    public static char[] toCharMas(double arg){
+        return toString(arg).toCharArray();
+    }
+    public static char[] toCharMas(String arg){
+        return arg.toCharArray();
     }
 
     public static void var_dump(int[] arg) {
